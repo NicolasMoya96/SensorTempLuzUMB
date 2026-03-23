@@ -1,0 +1,11 @@
+<resources>
+    <style name="Theme.SesorTemp"
+        parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/rojo_umb</item>
+        <item name="colorPrimaryVariant">@color/rojo_umb_claro</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/rojo_umb_claro</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@color/rojo_umb</item>
+    </style>
+</resources>

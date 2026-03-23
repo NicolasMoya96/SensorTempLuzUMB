@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- TEMPERATURA: frío → calor -->
+    <color name="azul_claro">#FFADD8E6</color>
+    <color name="azul">#FF0055FF</color>
+    <color name="gris">#FF999999</color>
+    <color name="amarillo">#FFFFCC00</color>
+    <color name="naranja">#FFFF8C00</color>
+    <color name="rojo">#FFFF3322</color>
+
+    <!-- LUZ: oscuro → brillante -->
+    <color name="negro">#FF111111</color>
+    <color name="gris_oscuro">#FF444444</color>
+    <color name="gris_medio">#FF888888</color>
+    <color name="amarillo_claro">#FFFFF59D</color>
+    <color name="amarillo_sol">#FFFFEE00</color>
+    <color name="blanco_sol">#FFFFFFFF</color>
+
+    <!-- TEMA UMB -->
+    <color name="rojo_umb">#FF8C1515</color>
+    <color name="rojo_umb_claro">#FFAA2222</color>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutLuz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <!-- Tarjeta principal: Luz -->
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#CCFFFFFF"
+        android:padding="24dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sensor de Luz"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/tvLux"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Esperando..."
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvNivel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---"
+            android:textSize="22sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="12dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressLuz"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="240dp"
+            android:layout_height="16dp"
+            android:max="40000"
+            android:progress="0"/>
+    </LinearLayout>
+
+    <!-- Leyenda de niveles -->
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#BBFFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Negro         : menor a 10 lux"
+            android:textSize="12sp" android:textColor="#000000"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Gris oscuro : 10 — 50 lux"
+            android:textSize="12sp" android:textColor="#000000"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Gris           : 50 — 200 lux"
+            android:textSize="12sp" android:textColor="#000000"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Amarillo     : 200 — 1000 lux"
+            android:textSize="12sp" android:textColor="#000000"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Amarillo sol: 1000 — 10000 lux"
+            android:textSize="12sp" android:textColor="#000000"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Blanco        : mayor a 10000 lux"
+            android:textSize="12sp" android:textColor="#000000"/>
+    </LinearLayout>
+
+    <!-- Botones -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnVolver"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volver"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="@color/rojo_umb"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/btnSalir"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salir"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF550000"/>
+    </LinearLayout>
+
+</LinearLayout>
